@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+
+    <meta name="author" content="Michael">
+    <meta name="description" content="week 2 demo">
+
+    
+    <title>W2 Demo</title>
+
+    <style>
+        /*in here we write CSS*/
+
+        /*selecting elements in css and js
+        
+        selector {
+            property:value;
+            property:value;
+
+        }
+
+        ways to select
+            *by element type (all elements of type are styled)
+            *by ID name (only that element is styled)
+            *by Class name (only elements in that class are styled)
+
+        */
+
+        /* by element*/
+        div { 
+            /*all div elements will hav ethe below styles*/
+            border:1px solid black;
+            margin:10px;
+            padding: 10px;
+        }
+
+
+        /*by id*/
+
+        #header {
+            /*by #id name*/
+            border:1px solid blue;
+        }
+
+        /*by classes*/
+
+        .bg {
+
+        background-color: black;
+        color:white; 
+        }
+
+
+    </style>
+</head>
+<body style="background-color: lightgray">
+    <!--WRAPPER - wraps around all the content-->
+    <div id="wrapper">
+
+        <!--HEADER-->
+        <div id="header" class="bg">
+
+            <h1>Week 2 Demo</h1><!--one 1 h1 per page - SEO -->
+            <h2>Attributes, <i>links</i>, and Images</h2>
+
+        </div>
+
+        <!--NAV BAR-->
+        <div id ="nav">
+
+            <!--external links: links outside our website-->
+
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+
+            <br>
+
+            <!--internal links: links to pages inside our site-->
+            <a href="text.txt">Open my Text File</a>
+            
+            <br>
+            <!--internal JUMP links: jump to a section based on the id in current page-->
+            <a href="#bio">BIO</a>
+            <a href ="#schools">SCHOOLS</a>
+            <a href="#hobbes">HOBBIES</a>
+
+            <br>
+
+            <a href ="#footer">Bottom of page</a>
+
+        </div>
+
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>My bio - All About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming.
+            You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.
+            </p>
+
+        </div>
+
+        <!--SCHOOLS-->
+        <div id="schools">
+
+            <h2>My Schools</h2>
+
+            <!-- orderd list-->
+
+            <ol>
+                <li>NEIT- MSIT - 2023</li>
+                <li>MECA - BFA, <i>Photography</i>- 2???</li>
+                <li>USM - media studies elective</li>
+            </ol>
+
+
+            <!--IMMAGES: required src and alt attributes-->
+
+            <!--ABSOLUTE PATHS: using immages from other sites-->
+            <img src="https://static.wikia.nocookie.net/gameofthrones/images/5/5c/Eddard_1x01.jpg/revision/latest/scale-to-width-down/270?cb=20120511213934" alt="ned stark holding Ice the great weord, contemplating a recent beheading">
+
+            <!--RELITIVE PATHS: using images from current site's root folder-->
+            <img src="images/meca.jpg" alt="porteous building at sunset" width="500">
+
+
+        </div>
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Things I like to do</h2>
+            <!--unorderd list-->
+            <ul>
+
+                <li>Gaming</li>
+                <li>Playing sports</li>
+                <li>Driving my car</li>
+
+            </ul>
+
+            <img src="images/stormsEnd.jpg" alt="Storm;s End Castle" width="500">
+        </div>
+
+        <!--FOOTER-->
+        <div id="footer" class="bg" style="text-align:center">
+
+            <a href="#header">Back to Top!</a>
+            <p>&copy;Michael | SE111.02 | 202420</p>
+
+        </div>
+
+    </div><!--/ #wrapper-->
+</body>
+</html>
