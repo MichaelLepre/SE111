@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Michael">
+    <meta name="description" content="w6 demo">
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color:grey;
+        }
+    </style>
+  
+</head>
+<body>
+    <!-- best pratice to have html in your body-->
+    <h1>w6 | Intro to JavaScript Demo</h1>
+
+    <!--ue script after content @ the nd of body but before close-->
+    <script>
+        //in here we write javascritp
+        //this is a single line comment
+
+        /* 
+            and this is a multiline comment
+        */
+       //we must declare variables before we can define or use them
+       var name             //declatation
+       name = "Michael"     //deffinition - assigning data to the name 
+
+       //combine the instructions
+       var new_name = "Mike"
+
+       var num1 = 10
+       var num2 = 7
+       var sum = num1 + num2
+
+       //output----------------------
+       //console.log() -> output for testing/development/ debugging not for the user
+       console.log(name) // 1 stored value
+       console.log(name, new_name) // 2 stored values
+       // literal strings use ` ` and allow for stored value inclusion
+       console.log(`1st NAME: ${name} \n2nd NAME: ${new_name}`) // message + stored
+
+       //alert() -> creates a pop-up; user must interact with (press ok) before next line of script are read
+       alert(`${sum} = ${num1} + ${num2}`)
+       console.log(`${sum} = ${num1} + ${num2}`)
+
+       //displays number rounded to the second decimal place
+       alert(`SUM TOTAL: $${sum.toFixed(2)}`) 
+       //this toFixed can only be allpied to number objects
+       //object is what comes before sum
+
+       //input-------------------------
+       //prompt() creates a pop-up window which includes a text fields for the user to enter data
+       // user must click ok before prompt() will close / any new lines are prossed
+
+       var last = prompt(`Hi ${name}! Wnter your last name: `)
+
+       console.log('passesd the prompt()')
+       console.log(`Last name: ${last}`)
+
+       //gaining numbers from the user - cast a number!
+       var num = Number(prompt(`enter a number: `))
+
+       //var multi = num * 10
+
+       console.log(num)               //looks like a number?
+       console.log(num.toFixed(2))    //but is it a number?
+    </script>
+
+</body>
+</html>
