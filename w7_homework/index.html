@@ -105,23 +105,20 @@
      <script>
         //write JS in here
 
-        //PART1-----selecting and storing HTML elements------------
-        /*
-            declare names for each of the following elements in the document: body, h1, input, div, input buttons
+        var body = document.querySelector(`body`)   //selecting by tag type/name
 
-            use EITHER .querySelector() OR .getElementById
 
-            console.log() all of these elements once complete
+        console.log(body)
 
-        */
 
-        //PART2------adding event listeners------------------------
-        /*
-            add an event listener to the #enter-button that runs a function called "formData"
+        console.log(`The body's ID is: ${body.id}`)
 
-            add an event listener to the #confirm-button that runs a function called "confirmForm"
-        */
+        body.id = `bodyId`
 
+        console.log(body)
+        console.log(`The body's ID is: ${body.id}`)
+       
+        document.querySelector(`#enter-button`).addEventListener(`click`, confirmData)
 
         //PART3------building event functions----------------------
         /*
@@ -145,7 +142,7 @@
                 -display all information (fullName, grossPay, taxAmount, netPay) to the user using ONE alert()
                 -each value should be on its own line (use `\n`) and ensure all monetary values are displayed to the second decimal place (.toFixed(2))
                 
-
+        
         */
        function formData(event)
        {
@@ -159,7 +156,24 @@
 
        function confirmData(event)
        {
+        var fname = document.getElementById(`first`).value
+        var lname = document.getElementById(`last`).value
+        var wage = document.getElementById(`rate`).value
+        var hours = document.getElementById(`hours`).value
 
+        var gross = wage * hours 
+        var tax = gross * .20
+        var net = gross - tax
+
+        
+        console.log(fname, lname, gross, tax, net)
+        /*
+        console.log('Gross pay: $', gross.toFixed(2)) 
+        console.log('Uncle Sams share: $', tax.toFixed(2), 'in taxes') 
+        console.log('Net pay: $', net.toFixed(2))    
+        */
+        
+     
        }//confirmData()
 
 
